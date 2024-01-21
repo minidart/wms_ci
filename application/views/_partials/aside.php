@@ -1,3 +1,4 @@
+<?php $master_data = array('company', 'partner') ?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 	<!-- Brand Logo -->
 	<a href="index3.html" class="brand-link">
@@ -37,7 +38,7 @@
 
 				<!-- Dashboard -->
 				<li class="nav-item">
-					<a href="pages/widgets.html" class="nav-link active">
+					<a href="<?= base_url('') ?>" class="nav-link <?= $active_menu == 'dashboard' ? 'active' : '' ?>">
 						<i class="nav-icon fas fa-tachometer-alt"></i>
 						<p>
 							Dashboard
@@ -46,7 +47,7 @@
 				</li>
 
 				<!-- Data Master -->
-				<li class="nav-item">
+				<li class="nav-item <?= in_array($active_menu, $master_data) ? 'menu-is-opening menu-open' : '' ?>">
 					<a href="#" class="nav-link">
 						<i class="nav-icon fas fa-table"></i>
 						<p>
@@ -56,7 +57,7 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="pages/UI/general.html" class="nav-link">
+							<a href="<?= base_url('index.php/company') ?>" class="nav-link <?= $active_menu == 'company' ? 'active' : '' ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Perusahaan</p>
 							</a>
