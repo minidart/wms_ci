@@ -42,7 +42,7 @@ class Unit extends CI_Controller
 
 	public function edit($id)
 	{
-		$data['title'] = 'Tambah Satuan';
+		$data['title'] = 'Edit Satuan';
 		$data['active_menu'] = 'unit';
 		$data['unit'] = $this->unit_model->get_by_id($id);
 		$this->load->view('unit/edit.php', $data);

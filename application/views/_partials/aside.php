@@ -1,4 +1,4 @@
-<?php $master_data = array('company', 'partner', 'unit') ?>
+<?php $master_data = array('company', 'partner', 'unit', 'warehouse') ?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 	<!-- Brand Logo -->
 	<a href="index3.html" class="brand-link">
@@ -75,7 +75,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="pages/UI/sliders.html" class="nav-link">
+							<a href="<?= base_url('index.php/warehouse') ?>" class="nav-link <?= $active_menu == 'warehouse' ? 'active' : '' ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Gudang</p>
 							</a>
