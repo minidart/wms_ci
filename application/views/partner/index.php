@@ -75,7 +75,7 @@
 										<th>Nama</th>
 										<th>Alamat</th>
 										<th>Kota</th>
-										<th>Telpon</th>
+										<th>Telepon</th>
 										<th>Fax</th>
 										<th>Email</th>
 										<th>Aksi</th>
