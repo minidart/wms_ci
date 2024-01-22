@@ -63,7 +63,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="pages/UI/icons.html" class="nav-link">
+							<a href="<?= base_url('index.php/partner') ?>" class="nav-link <?= $active_menu == 'partner' ? 'active' : '' ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Rekanan</p>
 							</a>

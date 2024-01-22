@@ -8,7 +8,6 @@ class Company extends CI_Controller
 		$this->load->model('company_model');
 	}
 
-
 	public function index()
 	{
 		$data['title'] = 'Perusahaan';

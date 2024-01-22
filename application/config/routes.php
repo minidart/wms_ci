@@ -56,3 +56,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['company/edit/(:any)'] = 'company/edit/$1';
 $route['company/update/(:any)'] = 'company/update/$1';
 $route['company/delete/(:any)'] = 'company/delete/$1';
+
+$route['partner/edit/(:any)'] = 'partner/edit/$1';
